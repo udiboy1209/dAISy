@@ -1,0 +1,381 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:silabs
+LIBS:dAISy-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Si4362 U1
+U 1 1 5A22C5F9
+P 5800 3000
+F 0 "U1" H 5600 3775 50  0000 R CNN
+F 1 "Si4362" H 5600 3700 50  0000 R CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 6150 2300 50  0001 L CNN
+F 3 "" H 5850 2000 50  0001 C CNN
+	1    5800 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X06 P4
+U 1 1 5A22C79F
+P 6150 1850
+F 0 "P4" H 6150 2200 50  0000 C CNN
+F 1 "SPI" V 6250 1850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 6150 1850 50  0001 C CNN
+F 3 "" H 6150 1850 50  0000 C CNN
+	1    6150 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 5A22C818
+P 5450 1850
+F 0 "P2" H 5450 2100 50  0000 C CNN
+F 1 "GPIO" V 5550 1850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 5450 1850 50  0001 C CNN
+F 3 "" H 5450 1850 50  0000 C CNN
+	1    5450 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 5A22C867
+P 3200 3150
+F 0 "P1" H 3200 3300 50  0000 C CNN
+F 1 "PWR" V 3300 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3200 3150 50  0001 C CNN
+F 3 "" H 3200 3150 50  0000 C CNN
+	1    3200 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 5A22C8F2
+P 6150 3900
+F 0 "Y1" H 6150 4050 50  0000 C CNN
+F 1 "30MHz" H 6150 3750 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 6150 3900 50  0001 C CNN
+F 3 "" H 6150 3900 50  0000 C CNN
+	1    6150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A22C9B6
+P 4950 3700
+F 0 "R1" V 5030 3700 50  0000 C CNN
+F 1 "100K" V 4950 3700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 4880 3700 50  0001 C CNN
+F 3 "" H 4950 3700 50  0000 C CNN
+	1    4950 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5A22CB2E
+P 3750 3250
+F 0 "C1" H 3775 3350 50  0000 L CNN
+F 1 "100pF" H 3775 3150 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 3788 3100 50  0001 C CNN
+F 3 "" H 3750 3250 50  0000 C CNN
+	1    3750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5A22CBA1
+P 4000 3250
+F 0 "C2" H 4025 3350 50  0000 L CNN
+F 1 "100nF" H 4025 3150 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4038 3100 50  0001 C CNN
+F 3 "" H 4000 3250 50  0000 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5A22CBF4
+P 4250 3250
+F 0 "C3" H 4275 3350 50  0000 L CNN
+F 1 "1uF" H 4275 3150 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4288 3100 50  0001 C CNN
+F 3 "" H 4250 3250 50  0000 C CNN
+	1    4250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5A22CC3B
+P 5500 4550
+F 0 "C5" H 5525 4650 50  0000 L CNN
+F 1 "6pF" H 5525 4450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5538 4400 50  0001 C CNN
+F 3 "" H 5500 4550 50  0000 C CNN
+	1    5500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 5A22CCFE
+P 5500 5300
+F 0 "C6" H 5525 5400 50  0000 L CNN
+F 1 "6pF" H 5525 5200 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5538 5150 50  0001 C CNN
+F 3 "" H 5500 5300 50  0000 C CNN
+	1    5500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5A22CD93
+P 4600 4200
+F 0 "C4" H 4625 4300 50  0000 L CNN
+F 1 "12pF" H 4625 4100 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4638 4050 50  0001 C CNN
+F 3 "" H 4600 4200 50  0000 C CNN
+	1    4600 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 5A22CE30
+P 5200 4950
+F 0 "L2" V 5150 4950 50  0000 C CNN
+F 1 "160nH" V 5300 4950 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 5200 4950 50  0001 C CNN
+F 3 "" H 5200 4950 50  0000 C CNN
+	1    5200 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 5A22CEF1
+P 5200 4200
+F 0 "L1" V 5150 4200 50  0000 C CNN
+F 1 "240nH" V 5300 4200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 5200 4200 50  0001 C CNN
+F 3 "" H 5200 4200 50  0000 C CNN
+	1    5200 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A22F153
+P 6800 2350
+F 0 "R2" V 6880 2350 50  0000 C CNN
+F 1 "100K" V 6800 2350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6730 2350 50  0001 C CNN
+F 3 "" H 6800 2350 50  0000 C CNN
+	1    6800 2350
+	0    1    1    0   
+$EndComp
+Text Label 6400 2250 0    60   ~ 0
+SDN
+Text Label 5300 3900 1    60   ~ 0
+SDN
+$Comp
+L BNC P3
+U 1 1 5A22F396
+P 5500 5700
+F 0 "P3" H 5510 5820 50  0000 C CNN
+F 1 "BNC" V 5610 5640 50  0000 C CNN
+F 2 "Sockets_BNC:BNC_Socket_TYCO-AMP_LargePads" H 5500 5700 50  0001 C CNN
+F 3 "" H 5500 5700 50  0000 C CNN
+	1    5500 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3600 5500 4400
+Connection ~ 5500 4200
+Wire Wire Line
+	5500 4700 5500 5150
+Connection ~ 5500 4950
+Wire Wire Line
+	4750 4200 4900 4200
+Wire Wire Line
+	4900 4000 4900 4950
+Wire Wire Line
+	4900 4000 5400 4000
+Wire Wire Line
+	5400 4000 5400 3600
+Connection ~ 4900 4200
+Wire Wire Line
+	5300 3600 5300 3900
+Wire Wire Line
+	5100 3700 5300 3700
+Connection ~ 5300 3700
+Wire Wire Line
+	5900 3600 5900 3900
+Wire Wire Line
+	5900 3900 6000 3900
+Wire Wire Line
+	6000 3600 6300 3600
+Wire Wire Line
+	6300 3600 6300 3900
+Wire Wire Line
+	5000 3100 5000 3000
+Wire Wire Line
+	3400 3100 5000 3100
+Connection ~ 4250 3100
+Connection ~ 4000 3100
+Connection ~ 3750 3100
+Wire Wire Line
+	3400 3200 3400 3500
+Wire Wire Line
+	3400 3400 4250 3400
+Connection ~ 3750 3400
+Connection ~ 4000 3400
+Wire Wire Line
+	6600 3000 6600 3200
+Connection ~ 6600 3100
+Wire Wire Line
+	5300 2050 5300 2400
+Wire Wire Line
+	5400 2050 5400 2400
+Wire Wire Line
+	5500 2050 5500 2400
+Wire Wire Line
+	5600 2050 5600 2400
+Wire Wire Line
+	5900 2400 5900 2050
+Wire Wire Line
+	6000 2400 6000 2050
+Wire Wire Line
+	6100 2400 6100 2050
+Wire Wire Line
+	6200 2400 6200 2050
+Wire Wire Line
+	6300 2050 6300 2400
+Wire Wire Line
+	6400 2050 6400 2250
+Wire Wire Line
+	6650 2350 6100 2350
+Connection ~ 6100 2350
+Wire Wire Line
+	5500 5450 5500 5550
+$Comp
+L GND #PWR01
+U 1 1 5A22F6AA
+P 5300 5700
+F 0 "#PWR01" H 5300 5450 50  0001 C CNN
+F 1 "GND" H 5300 5550 50  0000 C CNN
+F 2 "" H 5300 5700 50  0000 C CNN
+F 3 "" H 5300 5700 50  0000 C CNN
+	1    5300 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A22F74E
+P 4450 4200
+F 0 "#PWR02" H 4450 3950 50  0001 C CNN
+F 1 "GND" H 4450 4050 50  0000 C CNN
+F 2 "" H 4450 4200 50  0000 C CNN
+F 3 "" H 4450 4200 50  0000 C CNN
+	1    4450 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A22F832
+P 4800 3700
+F 0 "#PWR03" H 4800 3450 50  0001 C CNN
+F 1 "GND" H 4800 3550 50  0000 C CNN
+F 2 "" H 4800 3700 50  0000 C CNN
+F 3 "" H 4800 3700 50  0000 C CNN
+	1    4800 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5A22F8CA
+P 3400 3500
+F 0 "#PWR04" H 3400 3250 50  0001 C CNN
+F 1 "GND" H 3400 3350 50  0000 C CNN
+F 2 "" H 3400 3500 50  0000 C CNN
+F 3 "" H 3400 3500 50  0000 C CNN
+	1    3400 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 3400
+$Comp
+L GND #PWR05
+U 1 1 5A22F96A
+P 6950 2350
+F 0 "#PWR05" H 6950 2100 50  0001 C CNN
+F 1 "GND" H 6950 2200 50  0000 C CNN
+F 2 "" H 6950 2350 50  0000 C CNN
+F 3 "" H 6950 2350 50  0000 C CNN
+	1    6950 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5A22F9AE
+P 6600 3200
+F 0 "#PWR06" H 6600 2950 50  0001 C CNN
+F 1 "GND" H 6600 3050 50  0000 C CNN
+F 2 "" H 6600 3200 50  0000 C CNN
+F 3 "" H 6600 3200 50  0000 C CNN
+	1    6600 3200
+	1    0    0    -1  
+$EndComp
+Text Label 5300 2400 1    60   ~ 0
+GPIO0
+Text Label 5400 2400 1    60   ~ 0
+GPIO1
+Text Label 5500 2400 1    60   ~ 0
+GPIO2
+Text Label 5600 2400 1    60   ~ 0
+GPIO3
+Text Label 5900 2350 1    60   ~ 0
+SEL
+Text Label 6000 2350 1    60   ~ 0
+SDI
+Text Label 6100 2350 1    60   ~ 0
+SDO
+Text Label 6200 2300 1    60   ~ 0
+SCK
+Text Label 6300 2300 1    60   ~ 0
+IRQ
+$EndSCHEMATC
